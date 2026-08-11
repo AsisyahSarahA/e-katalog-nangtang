@@ -11,10 +11,31 @@ export const CATEGORY_COLORS = {
   "Kuliner": { bg: "bg-amber-100", text: "text-yellow-900", border: "border-amber-400", accent: "#D9A441" },
   "Hasil Bumi": { bg: "bg-emerald-100", text: "text-emerald-900", border: "border-emerald-300", accent: "#7D8F69" },
   "Material Bangunan": { bg: "bg-stone-200", text: "text-stone-800", border: "border-stone-400", accent: "#7B6A5E" },
+  "KonveKSI": { bg: "bg-rose-100", text: "text-rose-900", border: "border-rose-300", accent: "#B95657" },
   "Konveksi": { bg: "bg-rose-100", text: "text-rose-900", border: "border-rose-300", accent: "#B95657" },
 };
 
 export const umkmData = [
+  {
+    id: "anggi-risol",
+    nama: "Ibu Anggi (Teh Anggi)",
+    usaha: "Risol Teh Anggi",
+    deskripsi: "Aneka varian risol lumer dan lezat khas Desa Nangtang. Menyediakan Risol Mayo, Risol Matcha, Risol Coklat, Risol Ayam Pedas, dan Risol Ayam Original dengan isian berlimpah dan kulit gurih renyah.",
+    kategori: KATEGORI_ENUM.KULINER,
+    dusun: 1,
+    rt: "004",
+    rw: "002",
+    whatsapp: "6285295664719",
+    shopee: null,
+    tiktok: "https://instagram.com/anggiindriyani_",
+    rating: 5.0,
+    ulasan: 48,
+    foto: [
+      "/images/products/risol-anggi/risol-anggi-1.jpg",
+    ],
+    tags: ["risol", "risol mayo", "kuliner desa", "jajanan", "teh anggi"],
+    featured: true,
+  },
   {
     id: "wiarsih-anyaman",
     nama: "Ibu Wiarsih",
@@ -94,8 +115,11 @@ export const umkmData = [
     rating: 5.0,
     ulasan: 34,
     foto: [
-      "/images/products/rempah/rempah-1.jpg",
-      "/images/products/rempah/rempah-2.jpg",
+      "/images/products/kapulaga/kapulaga-1.jpg",
+      "/images/products/kapulaga/kapulaga-2.jpg",
+      "/images/products/kapulaga/kapulaga-3.jpg",
+      "/images/products/kapulaga/kapulaga-4.jpg",
+      "/images/products/kapulaga/kapulaga-5.jpg",
     ],
     tags: ["rempah", "kapulaga", "hasil bumi", "herbal"],
     featured: true,
@@ -159,8 +183,10 @@ export const umkmData = [
     rating: 4.9,
     ulasan: 38,
     foto: [
-      "/images/products/anyaman-bambu/anyaman-bambu-12.jpg",
-      "/images/products/anyaman-bambu/anyaman-bambu-13.jpg",
+      "/images/products/kayu-reng/kayu-reng-1.jpg",
+      "/images/products/kayu-reng/kayu-reng-2.jpg",
+      "/images/products/kayu-reng/kayu-reng-3.jpg",
+      "/images/products/kayu-reng/kayu-reng-4.jpg",
     ],
     tags: ["kayu", "reng", "furnitur", "bangunan"],
     featured: true,
@@ -180,7 +206,8 @@ export const umkmData = [
     rating: 4.9,
     ulasan: 61,
     foto: [
-      "/images/products/rempah/rempah-2.jpg",
+      "/images/products/kapulaga/kapulaga-2.jpg",
+      "/images/products/kapulaga/kapulaga-5.jpg",
       "/images/products/rempah/rempah-1.jpg",
     ],
     tags: ["buah", "rempah", "hasil bumi", "sunda"],
@@ -201,7 +228,8 @@ export const umkmData = [
     rating: 4.8,
     ulasan: 47,
     foto: [
-      "/images/products/anyaman-bambu/anyaman-bambu-14.jpg",
+      "/images/products/kayu-reng/kayu-reng-3.jpg",
+      "/images/products/kayu-reng/kayu-reng-4.jpg",
     ],
     tags: ["rak kayu", "furnitur minimalis", "kayu", "shopee"],
     featured: true,

@@ -16,6 +16,8 @@ folders = {
     "anyaman-bambu": os.path.join(BASE_DIR, "Pengepul Anyaman", "Pengepul Anyaman"),
     "rempah": os.path.join(BASE_DIR, "Rempah Rempah", "Rempah Rempah"),
     "konveksi": os.path.join(BASE_DIR, "Konveksi Celana", "Konveksi Celana"),
+    "kapulaga": os.path.join(BASE_DIR, "Kapulaga"),
+    "kayu-reng": os.path.join(BASE_DIR, "Kayu Reng"),
 }
 
 results = {}
@@ -25,7 +27,11 @@ for key, src_path in folders.items():
     os.makedirs(dest_folder, exist_ok=True)
     results[key] = []
     
-    files = glob.glob(os.path.join(src_path, "*.*"))
+    if not os.path.exists(src_path):
+        print(f"Directory not found: {src_path}")
+        continue
+
+    files = [f for f in glob.glob(os.path.join(src_path, "*.*")) if not f.lower().endswith(('.mp4', '.mov', '.avi', '.py'))]
     print(f"Processing {key}: found {len(files)} files")
     
     for idx, fpath in enumerate(files):
@@ -40,7 +46,7 @@ for key, src_path in folders.items():
                 # Convert RGBA/P to RGB if needed
                 if img.mode in ("RGBA", "P"):
                     img = img.convert("RGB")
-                # Resize if image is huge (> 1600px width/height) to make website lightning fast
+                # Resize if image is huge (> 1600px width/height)
                 img.thumbnail((1600, 1600), Image.Resampling.LANCZOS)
                 img.save(out_path, "JPEG", quality=85, optimize=True)
                 results[key].append(web_url)
