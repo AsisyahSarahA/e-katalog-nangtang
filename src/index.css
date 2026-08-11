@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FDF8F5;
+    color: #3E2723;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif-custom {
+    font-family: 'Fraunces', serif;
+  }
+}
+
+/* Paper Grain Texture Overlay */
+.paper-grain {
+  position: relative;
+}
+
+.paper-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#3E2723 0.75px, transparent 0.75px), radial-gradient(#7A2021 0.75px, #FDF8F5 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Woven Pattern Overlay for Footer */
+.woven-texture {
+  background-image: 
+    linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%),
+    linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EFDFCF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D3B08A;
+}
+
+/* Scrollbar hide helper */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
