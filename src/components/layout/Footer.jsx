@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Heart, MapPin, Mail, MessageCircle, ExternalLink } from 'lucide-react';
+import { Home, Heart, MapPin, Mail, MessageCircle, Users } from 'lucide-react';
 import { getGeneralWhatsAppUrl } from '../../utils/whatsapp';
 
 export default function Footer() {
@@ -74,7 +74,7 @@ export default function Footer() {
           {/* Col 3: Location & KKN Credit */}
           <div className="space-y-4">
             <h4 className="font-display font-semibold text-lg text-cream-50 tracking-wide border-b border-maroon-700/80 pb-2 inline-block">
-              Lokasi & Pengembang
+              Lokasi & Tim KKN
             </h4>
             <div className="space-y-3 text-sm text-cream-200">
               <div className="flex items-start gap-3">
@@ -87,14 +87,29 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-tan-500 shrink-0 mt-0.5" />
                 <span>kkn02.nangtang@lp3i.ac.id</span>
               </div>
-              <div className="pt-2 border-t border-maroon-700/60 space-y-1">
-                <span className="text-xs text-cream-300 block">Diprogram dan didesain oleh:</span>
-                <span className="font-semibold text-tan-500 text-xs block">
-                  Kelompok KKN 02 26 LP3I Tasikmalaya
+              <div className="pt-2.5 border-t border-maroon-700/60 space-y-1.5">
+                <span className="text-xs text-cream-300 block">Diprogram & disusun oleh:</span>
+                <span className="font-semibold text-tan-500 text-xs flex items-center gap-1.5">
+                  <Users className="w-3.5 h-3.5" /> Kelompok KKN 02 26 LP3I Tasikmalaya
                 </span>
-                <span className="text-xs text-cream-200 block">
-                  Developer: <span className="font-medium text-tan-400">Asisyah Sarah Azzahra</span>
-                </span>
+                <div className="pt-1 space-y-1 text-xs text-cream-200">
+                  <p>
+                    <span className="text-cream-400 font-medium">Developer:</span>{' '}
+                    <span className="text-tan-300 font-medium">Asisyah Sarah Azzahra</span>
+                  </p>
+                  <p>
+                    <span className="text-cream-400 font-medium">Creative:</span>{' '}
+                    <span>Azril Darussalam</span>
+                  </p>
+                  <p>
+                    <span className="text-cream-400 font-medium">Dokumentasi:</span>{' '}
+                    <span>Alfan Syahputra, Sendi Setiawan</span>
+                  </p>
+                  <p>
+                    <span className="text-cream-400 font-medium">Admin:</span>{' '}
+                    <span>Laila</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
