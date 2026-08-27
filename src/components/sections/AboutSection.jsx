@@ -42,7 +42,7 @@ export default function AboutSection() {
           </h2>
 
           <p className="text-ink-500 text-base leading-relaxed">
-            E-Katalog UMKM ini diinisiasi oleh <strong>Tim KKN Kelompok 02 Universitas Siliwangi (UNSIL) 2026</strong> bekerjasama dengan Perangkat Desa Nangtang untuk mendigitalisasi etalase produk lokal, mempermudah akses pasar, dan memperkuat identitas usaha desa secara inklusif.
+            E-Katalog UMKM ini diinisiasi oleh <strong>Kelompok KKN 02 2026 LP3I Tasikmalaya</strong> bekerjasama dengan Perangkat Desa Nangtang untuk mendigitalisasi etalase produk lokal, mempermudah akses pasar, dan memperkuat identitas usaha desa secara inklusif.
           </p>
         </div>
 

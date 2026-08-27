@@ -85,12 +85,15 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-tan-500 shrink-0 mt-0.5" />
-                <span>kkn.kelompok02.nangtang@unsil.ac.id</span>
+                <span>kkn02.nangtang@lp3i.ac.id</span>
               </div>
-              <div className="pt-2 border-t border-maroon-700/60">
+              <div className="pt-2 border-t border-maroon-700/60 space-y-1">
                 <span className="text-xs text-cream-300 block">Diprogram dan didesain oleh:</span>
-                <span className="font-semibold text-tan-500 text-xs">
-                  KKN Tematik Kelompok 02 — Universitas Siliwangi (UNSIL) 2026
+                <span className="font-semibold text-tan-500 text-xs block">
+                  Kelompok KKN 02 26 LP3I Tasikmalaya
+                </span>
+                <span className="text-xs text-cream-200 block">
+                  Developer: <span className="font-medium text-tan-400">Asisyah Sarah Azzahra</span>
                 </span>
               </div>
             </div>

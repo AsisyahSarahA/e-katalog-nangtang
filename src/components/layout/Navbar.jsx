@@ -162,7 +162,7 @@ export default function Navbar() {
                   <span>Hubungi via WhatsApp</span>
                 </a>
                 <p className="text-center text-xs text-ink-500 font-medium">
-                  KKN Kelompok 02 — Universitas Siliwangi 2026
+                  Kelompok KKN 02 26 LP3I Tasikmalaya • Dev: Asisyah Sarah Azzahra
                 </p>
               </div>
             </motion.div>
